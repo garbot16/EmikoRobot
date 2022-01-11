@@ -82,27 +82,23 @@ def get_readable_time(seconds: int) -> str:
 
 PM_START_TEXT = """
 *Hello {} !*
-✪ I'm an anime-theme management bot [✨](https://telegra.ph/file/0999e47689b8b250b8cd7.jpg)
-────────────────────────
-× *Uptime:* `{}`
-× `{}` *users, across* `{}` *chats.*
-────────────────────────
+✪ I'm that will help manage your groups
 ✪ Hit /help to see my available commands.
-"""
+✪ created by @inigar
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Emiko Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="About Gar", callback_data="emiko_"),
     ],
     [
-        InlineKeyboardButton(text="Get Help", callback_data="help_back"),
+        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
         InlineKeyboardButton(
             text="Try inline!​​", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Gar Robot To Your Group ➗", url="t.me/EmiexRobot?startgroup=new"),
+            text="➗ Add Gar Robot To Your Group ➗", url="t.me/inigarbot?startgroup=new"),
     ],
 ]
 
@@ -229,7 +225,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, I'm Emiko. Nice to meet You.",
+            f"👋 Hi, I'm Gar Robot. Nice to meet You.",
             parse_mode=ParseMode.HTML
        )
 
@@ -798,7 +794,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}", 
-                "👋 Hi, i'm alive.",
+                "Hi, i'm alive.",
                 parse_mode=ParseMode.MARKDOWN
             )
         except Unauthorized:
