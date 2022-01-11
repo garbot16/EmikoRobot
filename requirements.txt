@@ -23,7 +23,7 @@ psutil
 aiohttp
 Pillow
 CurrencyConverter
-googletrans==4.0.0rc1
+googletrans
 google-trans-new
 jikanpy
 speedtest-cli
@@ -32,7 +32,7 @@ regex
 bleach
 wikipedia
 markdown2
-telethon
+telethon==1.24.0
 telegraph
 heroku3
 spamwatch
@@ -45,8 +45,8 @@ pygithub
 TgCrypto
 Pyrogram
 PyDictionary
-git+https://github.com/Sorrybabe/downloader
-youtube_search_python==1.4.9
+yt-dlp
+youtube_search_python
 youtube_search
 lyrics_extractor
 asyncio
@@ -85,3 +85,9 @@ fuzzysearch
 img2pdf
 multicolorcaptcha
 git+https://github.com/python-telegram-bot/ptbcontrib.git
+hiredis
+pretty_errors
+requests_html
+ShazamAPI
+html-telegraph-poster
+qrcode
