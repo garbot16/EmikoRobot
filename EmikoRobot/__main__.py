@@ -85,10 +85,11 @@ PM_START_TEXT = """
 ✪ I'm that will help manage your groups
 ✪ Hit /help to see my available commands.
 ✪ created by @inigar
+"""
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Gar", callback_data="emiko_"),
+        InlineKeyboardButton(text="About Gar Robot", callback_data="emiko_"),
     ],
     [
         InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
@@ -225,7 +226,7 @@ def start(update: Update, context: CallbackContext):
             )
     else:
         update.effective_message.reply_text(
-            f"👋 Hi, I'm Gar Robot. Nice to meet You.",
+            f"👋 Hi, I'm {dispatcher.bot.first_name}. Nice to meet You.",
             parse_mode=ParseMode.HTML
        )
 
