@@ -445,7 +445,7 @@ def set_about_me(update: Update, context: CallbackContext):
 
 @sudo_plus
 def stats(update: Update, context: CallbackContext):
-    stats = "<b>✪Stats For bot.get_chat(user_id):</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
+    stats = "<b>📊 Current stats:</b>\n" + "\n".join([mod.__stats__() for mod in STATS])
     result = re.sub(r"(\d+)", r"<code>\1</code>", stats)
     result += "\n<b></b>"
     update.effective_message.reply_text(
