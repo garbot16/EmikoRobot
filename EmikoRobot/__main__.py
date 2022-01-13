@@ -796,6 +796,7 @@ def main():
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
                 f"""**Gar Robot Started!**
+
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
                 parse_mode=ParseMode.MARKDOWN,
