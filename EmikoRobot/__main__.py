@@ -89,17 +89,17 @@ PM_START_TEXT = """
 
 buttons = [
     [
-        InlineKeyboardButton(text="About Gar Robot", callback_data="emiko_"),
+        InlineKeyboardButton(text="➗ Add Gar Robot To Your Group ➗", url="t.me/inigarbot?startgroup=new"),
     ],
     [
-        InlineKeyboardButton(text="Help & Commands", callback_data="help_back"),
+        InlineKeyboardButton(text="About Gar Robot", callback_data="emiko_"),
         InlineKeyboardButton(
             text="Try inline!​​", switch_inline_query_current_chat=""
         ),
     ],
     [
         InlineKeyboardButton(
-            text="➗ Add Gar Robot To Your Group ➗", url="t.me/inigarbot?startgroup=new"),
+            text="Help & Commands", callback_data="help_back"),
     ],
 ]
 
